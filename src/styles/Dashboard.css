@@ -1,0 +1,157 @@
+.dashboard-page {
+  width: 100%;
+}
+
+.stats-card {
+  border-radius: 22px;
+  min-height: 145px;
+  transition: all 0.35s ease;
+  animation: cardFadeUp 0.6s ease both;
+}
+
+.stats-card .card-body {
+  padding: 26px;
+}
+
+.stats-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 0 2px var(--cardColor),
+    0 14px 35px rgba(0, 0, 0, 0.08) !important;
+}
+
+.stats-card:hover .stats-icon {
+  transform: scale(1.08) rotate(6deg);
+}
+
+.stats-card:hover .stats-title,
+.stats-card:hover .stats-value {
+  color: var(--cardColor);
+}
+
+.stats-title {
+  margin: 0;
+  font-size: 22px;
+  color: #8a97a8;
+  font-weight: 700;
+  letter-spacing: .2px;
+  transition: .35s ease;
+}
+
+.stats-value {
+  margin: 10px 0 6px;
+  font-size: 34px;
+  font-weight: 800;
+  transition: 0.35s ease;
+}
+
+.stats-change {
+  font-size: 14px;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.stats-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: 0.35s ease;
+}
+
+.stats-icon svg {
+  font-size: 30px;
+}
+
+.dashboard-section-card {
+  border-radius: 22px;
+  border: none;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+  transition: 0.3s ease;
+  animation: cardFadeUp 0.7s ease both;
+}
+
+.dashboard-section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.chart-box {
+  width: 100%;
+}
+
+@keyframes cardFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-value {
+    font-size: 28px;
+  }
+
+  .stats-card .card-body {
+    padding: 22px;
+  }
+}
+
+
+.table{
+border-collapse:separate;
+border-spacing:0 14px;
+}
+
+.table thead tr{
+background:transparent;
+}
+
+.table th{
+font-size:20px;
+font-weight:800;
+padding:20px 16px;
+border:none;
+}
+
+.table tbody tr{
+background:#ffffff;
+box-shadow:0 2px 8px rgba(15,23,42,.04);
+}
+
+.table td{
+font-size:18px;
+font-weight:600;
+padding:22px 16px;
+border-top:none;
+border-bottom:none;
+vertical-align:middle;
+}
+
+.table tbody tr td:first-child{
+border-radius:14px 0 0 14px;
+}
+
+.table tbody tr td:last-child{
+border-radius:0 14px 14px 0;
+}
+
+.table .badge{
+font-size:15px;
+padding:8px 16px;
+border-radius:20px;
+}

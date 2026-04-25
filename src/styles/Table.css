@@ -1,0 +1,276 @@
+.table-page {
+  width: 100%;
+}
+
+.page-heading {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.page-subtitle {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 17px;
+}
+
+.add-btn {
+  height: 52px;
+  padding: 0 24px;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2563eb;
+  border: none;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.search-box {
+  max-width: 560px;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 18px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.search-box svg {
+  color: #94a3b8;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 17px;
+  color: #111827;
+}
+
+.data-card {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+}
+
+.users-table {
+  min-width: 900px;
+}
+
+.users-table thead th {
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 20px 28px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.users-table tbody td {
+  padding: 24px 28px;
+  font-size: 17px;
+  color: #374151;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.users-table tbody tr:hover {
+  background: #f8fbff;
+}
+
+.user-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.role-badge,
+.status-badge {
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.role-admin {
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.role-editor {
+  color: #7e22ce;
+  background: #faf5ff;
+  border: 1px solid #e9d5ff;
+}
+
+.role-viewer {
+  color: #475569;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+}
+
+.status-active {
+  color: #047857;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+}
+
+.status-inactive {
+  color: #64748b;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+}
+
+.action-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn {
+  border: 1px solid #bfdbfe;
+  color: #2563eb;
+}
+
+.delete-btn {
+  border: 1px solid #fecaca;
+  color: #dc2626;
+}
+
+.action-btn svg {
+  font-size: 22px;
+}
+
+@media (max-width: 576px) {
+  .page-heading {
+    font-size: 26px;
+  }
+
+  .add-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-box {
+    max-width: 100%;
+  }
+}
+
+.category-select{
+height:56px;
+border-radius:16px;
+font-size:17px;
+font-weight:600;
+box-shadow:0 4px 14px rgba(15,23,42,.04);
+border:1px solid #e5e7eb;
+}
+
+.low-stock{
+display:flex;
+align-items:center;
+gap:6px;
+color:#d97706;
+font-weight:700;
+}
+
+.low-stock svg{
+font-size:18px;
+}
+
+.status-low{
+color:#b45309;
+background:#fffbeb;
+border:1px solid #fde68a;
+}
+
+
+.order-tabs {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 6px;
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.order-tabs button {
+  border: none;
+  background: transparent;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 800;
+  color: #64748b;
+}
+
+.order-tabs button.active {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+.order-tabs span {
+  margin-left: 8px;
+  background: #eef2ff;
+  color: #64748b;
+  padding: 3px 9px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.order-tabs button.active span {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.order-id {
+  color: #2563eb;
+}
+
+.view-btn {
+  border: 1px solid #e5e7eb;
+  color: #475569;
+}
+
+.status-delivered {
+  color: #047857;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+}
+
+.status-shipped {
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.status-pending {
+  color: #b45309;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+}
+
+.status-cancelled {
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
